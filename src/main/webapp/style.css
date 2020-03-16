@@ -1,0 +1,71 @@
+body {
+	font-family: sans-serif;
+	margin-top: 5em;
+}
+	
+#menu {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #444444;
+}
+
+#menu li {
+	display: inline-block;
+	list-style: none;
+	height: 1.5em;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+#menu a {
+	min-width: 8em;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+}
+
+#menu a:hover {
+	text-decoration: underline;
+}
+
+#menu a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+table {
+	border-collapse: collapse;
+	min-width: 50em;
+	border: thin solid #000000;
+}
+
+th {
+	text-align: left;
+	color: white;
+	background-color: #444444;
+}
+
+tr:nth-child(even) {
+	background-color: #DDDDDD;
+}
+
+tfoot td {
+	text-align: center;
+}
+
+form > div {
+	padding: .5em;
+}
+
+form > div > label:first-child {
+	display: inline-block;
+	min-width: 8em;
+	vertical-align: top;
+}
+
+.error {
+	color: red;
+	vertical-align: top;
+}
