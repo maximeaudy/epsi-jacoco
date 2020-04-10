@@ -117,6 +117,27 @@
 					</execution>
 				</executions>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>2.2</version>
+				<configuration>
+					<url>http://localhost:8080/manager/text</url>
+					<path>/cool</path>
+					<username>deployer</username>
+					<password>azerty</password>
+					<update>true</update>
+				</configuration>
+				<executions>
+					<execution>
+						<id>tomcat7deploy</id>
+						<phase>package</phase>
+						<goals>
+							<goal>deploy</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 </project>
